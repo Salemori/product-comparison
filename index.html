@@ -7,6 +7,7 @@
     <title>Product Comparison</title>
 
     <style>
+        /* Table 2 */
         table {
             width: 100%;
             /* border: 2px solid rgb(216, 21, 8); */
@@ -27,11 +28,87 @@
          tr:nth-child(odd) {
             background-color: #ffffff;
         }
+        /* ============================================== */
+        /* Table 1 */
+        .table{
+            width: 80%;   
+        }
+        .table tr td, th{
+            padding: 25px;
+        }
+        .product{
+            width: 20%;
+        }
+        .feature{
+            width: 30%;
+        }
+        .rating{
+            width: 30%;
+        }
+        .status{
+            width: 20%;
+        }
+        .table-row-header > th{
+            background-color: #4caf50;
+            color: white;
+        }
+        
+       .table-row td:first-child{
+            background-color: #4caf50;
+            color: white;
+        }
+        .table-row:nth-child(-n + 2) td:nth-child(n + 2)
+        {
+            background-color: #f2f2f2;
+        }
+        .table-row td, th {
+            border: 1px solid #dddddd;
+            
+
+        }
+
     </style>
 </head>
 
 <body>
     <h1>Product Comparison</h1>
+
+    <table class = "table">
+        <tr class="table-row-header">
+            <th class="product">Product</th>
+            <th class="faetures" colspan="2">Features & Pricing</th>
+            <th class="rating">Rating</th>
+            <th class="status">Stock Status</th>
+        </tr>
+        <tr class="table-row">
+            <td>Apple iPhone 14</td>
+            <td colspan="2">A15 Bionic Chip, 128GB Storage</td>
+            <td>4.8</td>
+            <td>In Stock</td>
+        </tr>
+        <tr class="table-row">
+            <td>Samsung Galaxy S23</td>
+            <td>Snapdragon 8 Gen 2</td>
+            <td>$999</td>
+            <td>4.6</td>
+            <td>Out of Stock</td>
+        </tr>
+        <tr class="table-row">
+            <td>Google Pixel 8</td>
+            <td rowspan="2">Google Tensor G2, 256GB Storage</td>
+            <td rowspan="2">$899</td>
+            <td>4.5</td>
+            <td>Available</td>
+        </tr>
+        <tr class="table-row">
+            <td>OnePlus 11</td>
+            <td>4.4</td>
+            <td>Pre-Order</td>
+        </tr>
+    </table>
+
+<br><br><br><br><br><br><br><br><br><br>
+
     <table>
         <tr>
             <th>Product Name</th>
